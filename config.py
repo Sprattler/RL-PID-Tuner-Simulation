@@ -1,9 +1,10 @@
 # config.py
+import math
 
 USE_PID = False
 
 MAX_TORQUE = 20
-SETPOINT = 0.0
+SETPOINT = math.radians(45)
 PENDULUM_MASS = 1.0
 PENDULUM_LENGTH = 0.5
 GRAVITY = 9.81
