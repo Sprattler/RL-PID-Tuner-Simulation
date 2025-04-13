@@ -1,5 +1,5 @@
 import torch
-from Agent import Actor  # oder wie deine Actor-Klasse heißt
+from Agent_Wassertankt import Actor  # oder wie deine Actor-Klasse heißt
 
 state_dim = 2
 action_dim = 1

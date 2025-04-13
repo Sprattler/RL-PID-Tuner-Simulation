@@ -2,10 +2,10 @@
 # Konfiguration ("Defines")
 # --------------------------------------------------------------
 TARGET_LEVEL = 5.0         # Soll-Wasserstand
-LEAK_RATE = 0.05           # Leckrate des Tanks
-EPISODES = 100             # Standard: Anzahl Trainings-Episoden
-MAX_STEPS = 200            # Maximale Schritte pro Episode
-DT = 0.1                   # Zeitschritt in s
+LEAK_RATE = 0.05
+EPISODES = 100
+MAX_STEPS = 100           # Schritte pro Episode
+DT = 0.1
 
 ACTOR_LR = 1e-3            # Lernrate Actor
 CRITIC_LR = 1e-3           # Lernrate Critic
@@ -16,12 +16,12 @@ POLICY_NOISE = 0.2
 NOISE_CLIP = 0.5
 POLICY_FREQ = 2
 
-EXPLORATION_NOISE = 0.1    # Zufälliges Rauschen bei Aktionen
+EXPLORATION_NOISE = 0.1
 BATCH_SIZE = 128
 REPLAY_BUFFER_SIZE = 1e6
 
-MAX_ACTION = 10.0          # Obergrenze für Wasserfluss (u)
-MIN_ACTION = 0.0           # Untergrenze (kein Rückfluss!)
+MAX_ACTION = 10.0          # Obergrenze  Wasserfluss
+MIN_ACTION = 0.0           # Untergrenze
 
 # --------------------------------------------------------------
 # Ab hier: Implementierung
